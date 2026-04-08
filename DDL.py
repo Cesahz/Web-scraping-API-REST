@@ -10,7 +10,7 @@ cur.execute("PRAGMA foreign_keys = ON")
 cur.execute("""
     CREATE TABLE IF NOT EXISTS categories (
         id      INTEGER PRIMARY KEY AUTOINCREMENT,
-        name    TEXT    NOT NULL
+        name    TEXT UNIQUE   NOT NULL
     )
 """)
 
